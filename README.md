@@ -10,6 +10,7 @@ $.ajax({
         cache:true,         //缓存 如果多次通过ajax请求同一个地址  true只有第一次从服务器请求 后面的会在缓存中获取（缓存中存在）
         crossDomain:true,  //跨域
         async:false,         //异步  默认true; 默认情况下都是异步传输
-        success:function(){}  //连接服务器成功后 执行的函数
+        success:function(){},  //连接服务器 成功 后调用此函数
+        error:function(){}     //连接服务器 失败 后调用此函数
     })
 </pre>
